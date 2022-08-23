@@ -53,24 +53,29 @@ return console.log(result);
 
 function rock_fun() {
     let playerChoice = "rock";
-    document.getElementById("playerc").innerHTML = "Rock!";
+    document.getElementById("playerc").innerHTML = "Rock";
     let computerChoice = getComputerChoice();
+    document.getElementById("compc").innerHTML = computerChoice;
     let winner = theGame(playerChoice, computerChoice);
      }
     
      function paper_fun() {
     let playerChoice = "paper";
-    document.getElementById("playerc").innerHTML = "Paper!";
+    document.getElementById("playerc").innerHTML = "Paper";
     let computerChoice = getComputerChoice();
+    document.getElementById("compc").innerHTML = computerChoice;
     theGame();
         return console.log("You chose Paper!");
      }
     
      function scissors_fun() {
-    document.getElementById("playerc").innerHTML = "Scissors!";
+    document.getElementById("playerc").innerHTML = "Scissors";
     let computerChoice = getComputerChoice();
+    document.getElementById("compc").innerHTML = computerChoice;
     let playerChoice = "scissors";
         return console.log("You chose Scissors!");
      }
 
-     
+
+
+     // Adapt main buttons to display computers choice
