@@ -24,7 +24,34 @@ h1 {
     background-color: rgb(232, 91, 91);
 }
 
-#winner {
-    border: 1px dashed red;
-    height:20px;
+.answers_flex {
+    width:100%;
+    height:500px;
+    display:flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
 }
+
+#winner {
+    border: 10px double rgb(232, 91, 91);
+    height:100%;
+}
+
+#cTally {
+    border: 10px double rgb(232, 91, 91);
+    height:100%;
+}
+
+#pTally {
+    border: 10px double rgb(232, 91, 91);
+    height:100%;
+}
+
+#final {
+    border: 10px double rgb(232, 91, 91);
+    height:100%;
+}
+
+/* organised results and tally into a flexbox and styled
