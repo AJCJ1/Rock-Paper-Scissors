@@ -1,3 +1,11 @@
+// global scope variables
+
+var playerTally = 0;
+var computerTally = 0;
+var result = "ERROR";
+
+// end of declarations
+
 function getComputerChoice() { // generates random number and attaches to rock, paper, or scissors
     let num = Math.floor(Math.random() * 3 );
     
@@ -13,7 +21,7 @@ function getComputerChoice() { // generates random number and attaches to rock, 
     
      return compchoice;
     
-    } /* end function */
+    } // end random computer's choice function
 
     console.log(getComputerChoice());
 
@@ -49,14 +57,15 @@ function rock_fun() {
 
     document.getElementById("winner").innerHTML = theGame(playerChoice, computerChoice);
         return;
-     }
+     } // end button functions
+
 
      function theGame(playerSelection, computerSelection) {
         /* rock over scissors, rock loses to paper
         scissors loses over rock, wins over paper
         paper wins over rock, loses over scissors
         otherwise draw */
-        let result = (playerSelection + computerSelection)
+        
       
         if((playerSelection == "Rock") && (computerSelection == "Scissors")) {
             result = ("Result: You won!");
@@ -78,6 +87,26 @@ function rock_fun() {
         } else {
             result = ("Result: Draw");
         } // end conditional
+
+        if (result == ("Result: You lost :(")) {
+            computerTally += 0.5;
+            document.getElementById("cTally").innerHTML = ("Computer: " + computerTally);
+        } else if (result == ("Result: You won!")) {
+            playerTally += 0.5;
+            document.getElementById("pTally").innerHTML = ("Player: " + playerTally);
+        } else {
+
+        }
+
+        if (playerTally >= 5) {
+            document.getElementById("final").innerHTML = ("Result: Game over! You win!");
+        } else if (computerTally >= 5) {
+            document.getElementById("final").innerHTML = ("Result: Game over! You lose...");
+        }
         return result;
 
-        } // end function theGame
+        } // end theGame function
+
+        
+
+   
