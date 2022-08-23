@@ -23,3 +23,8 @@ h1 {
 .buttons button:hover {
     background-color: rgb(232, 91, 91);
 }
+
+#winner {
+    border: 1px dashed red;
+    height:20px;
+}
