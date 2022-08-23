@@ -19,21 +19,32 @@
 </h1>
 
     <div class="buttons">
-        <button id="rock_button" onclick="rock_fun();" onclick="thegame();">Rock!</button>
-        <button id="paper_button"onclick="paper_fun();">Paper!</button>
-        <button id="scissors_button"onclick="scissors_fun();">Scissors!</button>
+        <button id="rock_button" onclick="rock_fun();" onclick="thegame();">
+            <img src="./Images/Rock.png" height=20px/> Rock!</button>
+        <button id="paper_button"onclick="paper_fun();">
+            <img src="/Images/Paper.png" height="20px"/> Paper!</button>
+        <button id="scissors_button"onclick="scissors_fun();">
+            <img src="./Favicon/favicon.ico"> Scissors!</button>
     </div>
 
-<div class="computer_choice">
-<h2> The computer chose:  <span id="compc">______</span> </h2>
-</div>
-<div class="person_choice"
-<h2> You chose: <span id="playerc">______</span> </h2>
-<h1> </h1>
-</div>
-<div id="winner">
-Result:
-</div>
+<div class="answers_flex" name="answer_box">
 
+    <div class="computer_choice" name="computer_choice">
+        <h2> The computer chose:  <span id="compc">______</span> </h2>
+    </div>
+    <div class="person_choice" name="person_choice">
+        <h2> You chose: <span id="playerc">______</span> </h2>
+        <h1> </h1>
+    </div>
+    <div id="winner" name="winner">
+        Result:
+    </div>
+    <div id="final">
+        Winner:
+    </div>
+    <div id="cTally" name="cTally">Computer:</div>
+    <div id="pTally" name="pTally">Player:</div>
+
+</div>
 </body>
 </html>
