@@ -114,10 +114,12 @@ function reset() {
     document.getElementById("game_over_overlay").style.display = "none";
     computerTally = 0;
     playerTally = 0;
+    document.getElementById("pTally").innerHTML = ("Player: " + playerTally);
+    document.getElementById("cTally").innerHTML = ("Computer: " + computerTally);
 }
 
 
-//Add function to display GAME OVER after one tally gets to 5
+
         
 
    
