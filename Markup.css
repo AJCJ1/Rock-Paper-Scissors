@@ -51,6 +51,7 @@ h1 {
 }
 
 .buttons button:hover {
+    transition:0.5s;
     background-color: rgb(232, 91, 91);
 }
 
