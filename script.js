@@ -21,12 +21,17 @@ let compchoice = null;
     
 return compchoice;
     
-    } // end random computer's choice function
+} // end random computer's choice function
 
 console.log(getComputerChoice());
 
 
+
+
+
+
 function rock_fun() {
+    console.log("WORKING");
     let playerChoice = "Rock";
     document.getElementById("playerc").innerHTML = "Rock";
     let computerChoice = getComputerChoice();
@@ -35,7 +40,7 @@ function rock_fun() {
     document.getElementById("result").innerHTML = theGame(playerChoice, computerChoice);
 return;
      }
-    
+ 
 function paper_fun() {
     let playerChoice = "Paper";
     let computerChoice = getComputerChoice();
@@ -56,6 +61,12 @@ function scissors_fun() {
 return;
      } // end button functions
 
+//event listeners for choice buttons
+document.getElementById("rb").addEventListener("click", rock_fun);
+document.getElementById('pb').addEventListener("click", paper_fun);
+document.getElementById('sb').addEventListener("click", scissors_fun);
+
+
 
 function theGame(playerSelection, computerSelection) {
         /* rock over scissors, rock loses to paper
@@ -64,6 +75,7 @@ function theGame(playerSelection, computerSelection) {
         otherwise draw */
         
 // conditional that selects the winner
+
     if((playerSelection == "Rock") && (computerSelection == "Scissors")) {
             result = ("Result: You won!");
               
@@ -97,7 +109,7 @@ function theGame(playerSelection, computerSelection) {
 // end conditional
 // upto5 conditional
         if (playerTally >= 5) {
-        /*    document.getElementById("final").innerHTML = ("Result: Game over! You win!"); */
+       
             document.getElementById("game_over_overlay").innerHTML = "Game over, You win!"
             document.getElementById("game_over_overlay").setAttribute('style','display:inline-block');
 
@@ -108,8 +120,8 @@ function theGame(playerSelection, computerSelection) {
 //end conditional
 
 return result;
-} // end theGame function
-
+    } // end theGame function
+    
 function reset() {
     document.getElementById("game_over_overlay").style.display = "none";
     computerTally = 0;
@@ -119,7 +131,5 @@ function reset() {
 }
 
 
-
         
-
-   
+//replaced onclick with external JS .addEventListeners

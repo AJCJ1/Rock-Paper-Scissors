@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Aboreto";
-    src: url(../Rock-Paper-Scissors/Aboreto/Aboreto-Regular.ttf) format='truetype';
+    src: url(../Rock-Paper-Scissors/Aboreto/Aboreto-Regular.ttf);
 }
 
 * {

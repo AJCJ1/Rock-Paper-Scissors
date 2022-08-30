@@ -16,19 +16,26 @@
 <div id="game_over_overlay" onClick="reset()">
     <h1>id="overlay_button" onclick="reset()">Game Over!</h1>
 </div>
-    <script src="script.js"></script>
+    
 <div id="Title" name="Rock, Paper, Scissors"> <!-- title div -->
     <h1>
     Rock, Paper, Scissors!
     </h1>
 </div>
+
 <div class="buttons"> <!-- button div -->
-    <button id="rock_button" onclick="rock_fun();" onclick="thegame();">
-        <img src="./Images/Rock.png" height=20px/> Rock!</button>
-    <button id="paper_button"onclick="paper_fun();">
-        <img src="/Images/Paper.png" height="20px"/> Paper!</button>
-    <button id="scissors_button"onclick="scissors_fun();">
-        <img src="./Favicon/favicon.ico"> Scissors!</button>
+    <button id="rb">
+        <img src="./Images/Rock.png" height=20px/> Rock!
+    </button>
+
+    <button id="pb">
+        <img src="/Images/Paper.png" height="20px"/> Paper!
+    </button>
+
+    <button id="sb">
+        <img src="./Favicon/favicon.ico"/> Scissors!
+    </button>
+
 </div> <!-- answers div -->
 <div class="answers_flex" name="answer_box">
     <div class="computer_choice" name="computer_choice">
@@ -48,5 +55,6 @@
         Player:
     </div>
 </div> <!-- end flex div-->
+<script src="script.js"></script>
 </body>
 </html>
